@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 10e9ed20e2c0c2d44bc86dfe1f184190
+  - enabled: 1
+    path: Assets/Scenes/Endless Brave.unity
+    guid: e02a5004872dfe048b727b58ee42f951
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f3cb377a3f1b1d14298b3acf8b4addf0, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e01dd837e113d6441af17ef276eceecf, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: ee3f284d70bcd834b899f81e2b66694e, type: 2}
