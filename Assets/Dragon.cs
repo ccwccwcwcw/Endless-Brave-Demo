@@ -8,12 +8,22 @@ public class Dragon : MonoBehaviour
     public int HP = 100;
     public Animator animator;
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "OHSword")
+        {
+            TakeDamage(10);
+            Debug.Log("collision");
+        }
+    }
+
     public void TakeDamage(int damageAmount)
     {
         HP -= damageAmount;
         if (HP <= 0)
         {
             animator.SetTrigger("die");
+            GetComponent<Collider>().enabled = false;
         }
         else 
         {
