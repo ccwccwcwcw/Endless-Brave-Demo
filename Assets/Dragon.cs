@@ -15,6 +15,22 @@ public class Dragon : MonoBehaviour
             TakeDamage(10);
             Debug.Log("collision");
         }
+        if (other.tag == "OHAxe")
+        {
+            TakeDamage(15);
+            Debug.Log("collision");
+        }
+        if (other.tag == "OHHammer")
+        {
+            TakeDamage(13);
+            Debug.Log("collision");
+        }
+        if (other.tag == "OHMace")
+        {
+            TakeDamage(14);
+            Debug.Log("collision");
+        }
+       
     }
 
     public void TakeDamage(int damageAmount)
@@ -22,8 +38,9 @@ public class Dragon : MonoBehaviour
         HP -= damageAmount;
         if (HP <= 0)
         {
-            animator.SetTrigger("die");
+            animator.SetTrigger("die");            
             GetComponent<Collider>().enabled = false;
+            Destroy(gameObject);
         }
         else 
         {
