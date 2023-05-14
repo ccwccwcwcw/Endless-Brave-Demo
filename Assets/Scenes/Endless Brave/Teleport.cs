@@ -11,7 +11,7 @@ public class Teleport : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-                Debug.Log("Player collided with flower");
+                //Debug.Log("Player collided with flower");
 
         if (other.CompareTag("Player"))
         {
