@@ -5,7 +5,7 @@ using UnityEngine;
 public class NPCInteractable : MonoBehaviour
 {
  
-    private void Interact()
+    public void Interact()
     {
         Debug.Log("okk");
     }
