@@ -18,11 +18,12 @@ TagManager:
   - ball
   - WayPoints
   - Dragon
+  - Character
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Top
   - Water
   - UI
   - 
@@ -54,4 +55,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Top
+    uniqueID: 2813772551
     locked: 0
