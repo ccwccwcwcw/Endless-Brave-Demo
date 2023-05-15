@@ -33155,7 +33155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79dd9bcf9d8f9884e8578fb94c48df3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Menu: {fileID: 0}
+  Menu: {fileID: 1386268710}
   Anchor: {fileID: 684861696}
   leftHandController: {fileID: 1444074693}
 --- !u!114 &847747234

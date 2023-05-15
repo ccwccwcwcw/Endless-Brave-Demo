@@ -64014,7 +64014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79dd9bcf9d8f9884e8578fb94c48df3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Menu: {fileID: 0}
+  Menu: {fileID: 1355321131}
   Anchor: {fileID: 414834023}
   leftHandController: {fileID: 190452061}
 --- !u!114 &1550875141
