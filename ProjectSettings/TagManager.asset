@@ -18,6 +18,7 @@ TagManager:
   - ball
   - WayPoints
   - Dragon
+  - IndexFinger
   layers:
   - Default
   - TransparentFX

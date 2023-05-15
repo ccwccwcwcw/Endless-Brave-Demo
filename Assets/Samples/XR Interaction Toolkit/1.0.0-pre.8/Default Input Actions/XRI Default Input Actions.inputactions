@@ -156,7 +156,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Inventory",
+                    "name": "Menu",
                     "type": "Button",
                     "id": "7fccb7c3-407b-41f9-a5a4-dfd0e082c199",
                     "expectedControlType": "Button",
@@ -487,11 +487,11 @@
                 {
                     "name": "",
                     "id": "1bab984f-a83a-41da-a008-96b3b58a106c",
-                    "path": "<XRController>{LeftHand}/menu",
+                    "path": "<OculusTouchController>{LeftHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Inventory",
+                    "action": "Menu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
