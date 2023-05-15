@@ -1,18 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR;
+using UnityEngine.SceneManagement;
 
 public class PlayerHP : MonoBehaviour
 {
     public GameObject GameOverScreen;
     private int HP = 100;
+    public string scenename;
+    public XRController leftHandController;
     private void OnTriggerEnter(Collider other)
     {
 
 
         if (other.tag == "Dragon")
         {
-            TakeDamage(10);
+            TakeDamage(20);
             Debug.Log("collision");
         }
     }
@@ -21,11 +27,12 @@ public class PlayerHP : MonoBehaviour
         HP -= damageAmount;
         if (HP <= 0)
         {
-            GameOver();
+            GameOverScreen.SetActive(true);
+            Invoke("GameOver", 3);
         }
     }
     public void GameOver()
     {
-        GameOverScreen.SetActive(true);
+        SceneManager.LoadScene(scenename);
     }
 }

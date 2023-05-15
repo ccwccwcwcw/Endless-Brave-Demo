@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lab.unity
     guid: f9d352991297a774a85aa6201abbce8f
+  - enabled: 1
+    path: Assets/Scenes/Desert.unity
+    guid: 42ce4ab3375ad254699989a4ea73e7fd
+  - enabled: 1
+    path: Assets/Scenes/Mountain.unity
+    guid: 4776f84437613ec4b95dce5aed26b12e
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f3cb377a3f1b1d14298b3acf8b4addf0, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e01dd837e113d6441af17ef276eceecf, type: 2}

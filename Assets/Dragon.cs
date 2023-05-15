@@ -7,13 +7,10 @@ public class Dragon : MonoBehaviour
 {
     // Start is called before the first frame update
     private int HP = 100;
-    public Slider healthBar;
     public Animator animator;
 
     private void OnTriggerEnter(Collider other)
     {
-        
-        
         if (other.tag == "OHSword")
         {
             TakeDamage(10);
@@ -34,27 +31,22 @@ public class Dragon : MonoBehaviour
             TakeDamage(14);
             Debug.Log("collision");
         }
-  
-    }
-    void Update()
-    {
-        healthBar.value = HP;
-    }
 
+    }
     public void TakeDamage(int damageAmount)
     {
         HP -= damageAmount;
         if (HP <= 0)
         {
-            AudioManager.instance.Play("DragonDeath");
             animator.SetTrigger("die");            
             GetComponent<Collider>().enabled = false;
             Destroy(gameObject,3.0f);
+            AudioManager.instance.Play("DragonDeath");
         }
         else 
         {
-            AudioManager.instance.Play("DragonDamage");
             animator.SetTrigger("damage");
+            AudioManager.instance.Play("DragonDamage");
         }
     }
 }
